@@ -1,0 +1,18 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: task01, install git 
+    apt:
+       name: git
+       state: present
+  
+  - name: task02, instal tree abc 123 zyx
+    apt:  
+      name:  tree
+      state: present
+
+  - name: task03, install wget
+    apt:
+      name: wget
+      state: present
