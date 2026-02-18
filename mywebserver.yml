@@ -5,25 +5,25 @@
   tasks: 
   - name: install apache2 webserver ( sudo apt-get install apache2) on debian nodes
     apt:
-      name: apache2
+      name: "{{mywebserverpackonubuntu}}"
       state: present
     when: ansible_os_family=="Debian"
 
   - name: i want to start wberver service  (sudo service apache2 start) on debian nodes 
     service:
-      name: apache2
+      name: "{{mywebserverpackonubuntu}}"
       state: started
     when: ansible_os_family=="Debian"
     
   - name: install httpd webserver on RedHat nodes
     dnf:
-      name: httpd
+      name: "{{mywebserverpackonredhat}}"
       state: present
     when: ansible_os_family=="RedHat"
 
   - name: start httpd service on RedHat nodes
     service:
-      name: httpd
+      name: "{{mywebserverpackonredhat}}"
       state: started
     when: ansible_os_family=="RedHat"
     
