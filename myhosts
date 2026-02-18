@@ -21,6 +21,6 @@
 [mywebservers:vars]
 key= value
 var01= value 
-mywebserverpackonubuntu= apache2
+mywebserverpackonubuntu= apache22222
 mywebserverpackonredhat= httpd
 
