@@ -1,7 +1,6 @@
 ---
-- hosts: myhosts
+- hosts: 172.31.35.71
   become: yes
   tasks:
   - name: i want to direct linux command
     command: apt-get install git
-    
