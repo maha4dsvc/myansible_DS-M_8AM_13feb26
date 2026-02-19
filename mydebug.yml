@@ -4,3 +4,8 @@
   tasks:
   - name: i want to direct linux command
     command: apt-get install git
+    register: myresult
+
+  - name: i want to disply my first task result
+    debug:
+       msg: "myresult: {{myresult}}"
