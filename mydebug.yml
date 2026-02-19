@@ -1,0 +1,7 @@
+---
+- hosts: myhosts
+  become: yes
+  tasks:
+  - name: i want to direct linux command
+    command: apt-get install git
+    
