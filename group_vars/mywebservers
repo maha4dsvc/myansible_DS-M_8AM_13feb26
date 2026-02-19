@@ -1,5 +1,5 @@
 ---
 mywebserverpackonubuntu: apache2
 mywebserverpackonredhat: httpd
-myjavaonubuntu: openjdk-17-jdk-headless
-myjavaonredhat: java-17-amazon-corretto 
+myjavaonubuntu: openjdk-21-jdk-headless
+myjavaonredhat: java-21-amazon-corretto 
