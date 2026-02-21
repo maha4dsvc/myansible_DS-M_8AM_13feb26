@@ -13,15 +13,26 @@
     copy: 
        src: mystaticfile
        dest: /home/maha/myfolder/mystaticfile
+    notify: startwebserver
 
   - name: install webserver
     apt:
       name: apache2
       state: present
+    notify: startwebserver
+
   - name: copy myindex.j2 file into nodes side
     template:
         src: myindex.j2
         dest: /var/www/html/index.html
+    notify: startwebserver
+
+  handlers: 
+  - name: startwebserver
+    service:
+      name: apache2
+      state: restarted 
+
 
 
 
