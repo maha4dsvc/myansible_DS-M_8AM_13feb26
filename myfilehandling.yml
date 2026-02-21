@@ -13,7 +13,7 @@
     copy: 
        src: mystaticfile
        dest: /home/maha/myfolder/mystaticfile
-    notify: startwebserver
+   
 
   - name: install webserver
     apt:
