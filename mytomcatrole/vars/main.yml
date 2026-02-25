@@ -2,3 +2,4 @@
 ---
 # vars file for mytomcatrmyole
 myjavapack: openjdk-21-jdk
+mysqlpasswd: maha123!
