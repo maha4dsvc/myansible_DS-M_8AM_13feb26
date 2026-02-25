@@ -1,0 +1,7 @@
+---
+- name: grant own on tomcat folder
+  command: "sudo chown -R tomcat: /opt/tomcat"
+
+- name: give execute peesmission 
+  command: "sudo sh -c 'chmod +x /opt/tomcat/bin/*.sh'"
+  

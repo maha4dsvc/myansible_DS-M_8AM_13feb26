@@ -1,3 +1,4 @@
 #SPDX-License-Identifier: MIT-0
 ---
-# vars file for mytomcatrole
+# vars file for mytomcatrmyole
+myjavapack: openjdk-21-jdk
