@@ -7,6 +7,7 @@
 - include_tasks: permission.yml
 - include_tasks: mytomcatservice.yml
 - include_tasks: starttomcat.yml
+- include_tasks: deployjavaapp.yml
 
 
 
